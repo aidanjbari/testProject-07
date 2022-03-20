@@ -3,6 +3,7 @@
 
 #include "G4UserRunAction.hh"
 #include "G4Run.hh"
+#include "G4SystemOfUnits.hh"
 
 #include "g4root.hh"
 

@@ -50,6 +50,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 	if(eDep > 0.001) {
 	man->FillNtupleDColumn(2, 0, eDep);
 	man->AddNtupleRow(2);
+	man->FillH1(0, eDep);
 	}
 	
 	return true;

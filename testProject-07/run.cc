@@ -36,6 +36,8 @@ void MyRunAction::BeginOfRunAction(const G4Run* run) {
 	man->CreateNtuple("Scoring", "Scoring");
 	man->CreateNtupleDColumn("fEdep");
 	man->FinishNtuple(2);
+	
+	man->CreateH1("fEdep", "Energy Deposition", 2000, 0.,  1*MeV);
 } 
 
 void MyRunAction::EndOfRunAction(const G4Run*) {
